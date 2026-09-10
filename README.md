@@ -42,7 +42,7 @@ Neither is a "restaurant concept" or a "portfolio concept."
 **Claude Code (local):**
 
 ```bash
-git clone https://github.com/<you>/structural-metaphor.git ~/.claude/skills/structural-metaphor
+git clone https://github.com/selrvk/structural-metaphor.git ~/.claude/skills/structural-metaphor
 ```
 
 Claude picks it up on the next session. To scope it to one project instead, clone
