@@ -1,0 +1,54 @@
+{
+  "skill_name": "structural-metaphor",
+  "evals": [
+    {
+      "id": 0,
+      "name": "rich-source-material-bakery",
+      "prompt": "we're redoing the website for my tita's bakery in Lipa. it's been in the family since 1952 and they still use the original wood-fired oven \u2014 she refuses to replace it even though it's a pain to run. people queue outside from like 5am on Saturdays for the pandesal. i've got maybe 12 photos, mostly of the oven and the queue outside, plus a few of the breads on trays. google reviews mostly say \"best pandesal in batangas\" and two of them complain the place is hard to find. can you work out a design direction for the site? i really don't want it looking like every other bakery website",
+      "expected_output": "Three concepts. Concept A should be the category-obvious one (flour/kraft paper/rolling pin) and be explicitly rejected as interchangeable. B and C should derive from the specifics actually given \u2014 the 1952 wood-fired oven, the 5am queue, 'hard to find'. All eight slots filled concretely. Palette tied to the described photos. No invented facts (no made-up prices, awards, or family names). Should stop and ask the user to pick.",
+      "files": [],
+      "assertions": [
+        "Proposes exactly three concepts, labelled A, B and C",
+        "Names the category-obvious bakery concept (flour / kraft paper / rolling pin / oven-warmth cliche) as Concept A and explicitly rejects it as interchangeable between bakeries",
+        "Concepts B and C each derive from at least one specific detail given: the 1952 wood-fired oven, the 5am Saturday queue, or the 'hard to find' complaint",
+        "Fills all eight named slots (header, backdrop, transitions, dividers, scroll indicator, buttons, footer, 404+favicon) for at least one concept",
+        "Gives a palette with hex codes and a stated role for each colour",
+        "Treats the 'hard to find' review complaint as a design problem to solve rather than ignoring it",
+        "Invents no facts: no prices, product names beyond pandesal, awards, staff names, or dates other than the given 1952",
+        "Stops and asks the user to choose a concept instead of proceeding to build"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "portfolio-non-business",
+      "prompt": "i need a portfolio site for myself. i'm a freelance live sound engineer, 8 years in, mostly gigs at small venues around Manila plus some festival work. i have photos of me at the desk, a bunch of venue shots at night, and a list of about 40 acts i've mixed for. also 3 client testimonials that came in over email. what's a good creative direction here? i don't want another generic dark-mode portfolio with a grid of project cards",
+      "expected_output": "Demonstrates the method is not local-business-specific. Metaphor derived from the mixing desk / signal chain / the night-of-show process rather than 'portfolio' conventions. Should attempt content mapping \u2014 e.g. the 40 acts becoming channel strips or a setlist. Testimonials handled verbatim. Should note the emailed testimonials need permission/attribution rather than inventing sources.",
+      "files": [],
+      "assertions": [
+        "Derives the metaphor from sound-engineering specifics (the mixing desk, signal chain, soundcheck-to-encore timeline, the room) rather than from generic portfolio conventions",
+        "Attempts a content mapping for the list of ~40 acts, placing it inside the metaphor rather than as a plain list",
+        "Fills all eight named slots for at least one concept",
+        "Proposes three concepts and explicitly rejects the obvious one",
+        "Handles the 3 emailed testimonials as verbatim quotes and raises attribution or permission before publishing them",
+        "Invents no act names, venue names, festival names, or credits that were not supplied",
+        "Shows the method is not local-business specific: no assumptions about opening hours, walk-in directions, or a physical storefront"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "thin-material-restraint-pressure",
+      "prompt": "can you design something really eye-catching for my dental clinic's landing page? we're in Batangas City, been open 3 years. honestly i don't have much to give you \u2014 a few photos of the clinic interior (clean but kind of plain, fluorescent lighting), our logo, and that's it. no reviews yet. i want it to really stand out and look impressive, maybe some fancy animations",
+      "expected_output": "The hard case. Should resist the 'make it pop' pull and argue that restraint is the correct concept for a clinic, while still giving a real direction rather than a shrug. Must not invent reviews, credentials, dentist names, or services. Should flag that the fluorescent interior photos constrain the palette and produce a shot list. Should keep booking/contact as the page's job above any animation.",
+      "files": [],
+      "assertions": [
+        "Pushes back on the 'fancy animations' request rather than delivering it uncritically, and explains why restraint suits a clinic",
+        "Still delivers a concrete, specific design direction rather than only declining or lecturing",
+        "Invents no reviews, testimonials, patient counts, dentist names, credentials, certifications, or service lists",
+        "Notes that the plain fluorescent-lit interior photos constrain the visual direction",
+        "Offers a shot list or specific photography guidance to fix the missing material",
+        "Keeps booking or contacting the clinic as the page's primary job, above any decorative element",
+        "Uses visible TODO/placeholder markers for facts it does not have"
+      ]
+    }
+  ]
+}
